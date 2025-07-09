@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>BlockBlastPuzzle</title>
-    <link rel="icon" href="https://hub.trantien.id.vn/trantien.game.hub.png" type="image/png" />
+    <link rel="icon" href="icon.png" type="image/png" />
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
     <canvas id="unity-canvas" width=600 height=900 tabindex="-1" style="width: 600px; height: 900px; background: #231F20"></canvas>
     <script src="Build/WEB.loader.js"></script>
     <script>
+      window.addEventListener("load", function () {
+        if ("serviceWorker" in navigator) {
+          navigator.serviceWorker.register("ServiceWorker.js");
+        }
+      });
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
         var meta = document.createElement('meta');
