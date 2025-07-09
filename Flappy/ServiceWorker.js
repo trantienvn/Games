@@ -1,9 +1,9 @@
 const cacheName = "trantien-Flappy-1.0.4";
 const contentToCache = [
     "Build/FlappyWeb.loader.js",
-    "Build/FlappyWeb.framework.js.br",
-    "Build/FlappyWeb.data.br",
-    "Build/FlappyWeb.wasm.br",
+    "Build/FlappyWeb.framework.js",
+    "Build/FlappyWeb.data",
+    "Build/FlappyWeb.wasm",
     "TemplateData/style.css"
 
 ];

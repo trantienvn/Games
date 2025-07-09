@@ -1,9 +1,11 @@
-const cacheName = "reun-Block Blast Puzzle-1.1";
+const cacheName = "BlipyGames-BlockBlastPuzzle-1.0";
 const contentToCache = [
-    "Build/WEB.data",
+    "Build/WEB.loader.js",
     "Build/WEB.framework.js",
+    "Build/WEB.data",
     "Build/WEB.wasm",
-    "Build/WEB.loader.js"
+    "TemplateData/style.css"
+
 ];
 
 self.addEventListener('install', function (e) {
