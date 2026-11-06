@@ -11,7 +11,6 @@
     <!-- Thông tin mô tả -->
     <meta name="description"
         content="TranTienGames cho các ứng dụng Android của TranTien. Tải xuống các ứng dụng yêu thích của bạn một cách dễ dàng và nhanh chóng." />
-    <meta name="keywords" content="TranTienHub, Mini App Store, Android Apps, Tải ứng dụng, TranTien Apps, Games, TranTien Games" />
     <meta name="author" content="TranTien" />
 
     <!-- Open Graph (Facebook, Zalo, LinkedIn...) -->
@@ -24,7 +23,6 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="TranTienGames" />
-    <meta name="twitter:description" content="Tải ứng dụng Android miễn phí từ TranTien." />
     <meta name="twitter:image" content="https://hub.trantien.id.vn/trantien.game.hub.png" />
 
     <!-- Bảo mật & hiển thị -->
@@ -150,7 +148,7 @@
 
         function openApp(path) {
             const scheme = `https://games.trantien.id.vn${path}`;
-            window.location.href = scheme;
+            window.location.href = path;
             // Nếu không mở được, chuyển hướng đến trang chủ
             setTimeout(() => {
                 window.location.href = "https://games.trantien.id.vn";
